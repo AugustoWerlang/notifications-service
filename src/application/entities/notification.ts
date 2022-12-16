@@ -1,6 +1,6 @@
-import { randomUUID } from "crypto";
-import { Replace } from "src/helpers/Replace";
-import { Content } from "./content";
+import { randomUUID } from 'crypto';
+import { Replace } from 'src/helpers/Replace';
+import { Content } from './content';
 
 export interface NotificationProps {
   recipientId: string;
@@ -16,7 +16,7 @@ export class Notification {
   private props: NotificationProps;
 
   constructor(
-    props: Replace<NotificationProps, { createdAt?: Date }>, 
+    props: Replace<NotificationProps, { createdAt?: Date }>,
     id?: string,
   ) {
     this._id = id ?? randomUUID();

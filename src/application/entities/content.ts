@@ -11,9 +11,9 @@ export class Content {
 
   constructor(content: string) {
     const isContentLenghtValid = this.validateContentLenght(content);
-    
-    if(!isContentLenghtValid) {
-      throw new Error("Content length error.");
+
+    if (!isContentLenghtValid) {
+      throw new Error('Content length error.');
     }
 
     this.content = content;

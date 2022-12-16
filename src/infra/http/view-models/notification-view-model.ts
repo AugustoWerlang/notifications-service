@@ -1,4 +1,4 @@
-import { Notification } from "@application/entities/notification"
+import { Notification } from '@application/entities/notification';
 
 export class NotificationViewModel {
   static toHTTP(notification: Notification) {
@@ -7,6 +7,6 @@ export class NotificationViewModel {
       content: notification.content.value,
       category: notification.category,
       recipientId: notification.recipientId,
-    }
+    };
   }
 }
